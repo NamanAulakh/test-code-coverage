@@ -1,16 +1,6 @@
 {
-  "presets": [
-    [
-      "env",
-      {
-        "targets": {
-          "browsers": ["last 2 Chrome versions"]
-        }
-      }
-    ],
-    "flow"
-  ],
-  "plugins": ["flow-runtime", "transform-decorators-legacy", "transform-class-properties"],
+  "presets": ["env", "flow"],
+  "plugins": ["flow-runtime"],
   "env": {
     "test": {
       "plugins": ["istanbul"]
