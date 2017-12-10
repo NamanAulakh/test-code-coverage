@@ -1,0 +1,16 @@
+{
+  "extends": ["airbnb-base", "plugin:flowtype/recommended"],
+  "plugins": ["flowtype"],
+  "rules": {
+    "semi": [2, "never"],
+    "no-unexpected-multiline": 2,
+    "no-underscore-dangle": 0,
+    "no-mixed-operators": 0,
+    "camelcase": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  }
+}

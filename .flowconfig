@@ -1,0 +1,11 @@
+[options]
+suppress_comment= \\(.\\|\n\\)*\\flow-disable-line
+module.name_mapper='^app\/\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
+
+[libs]
+.*/node_modules/*
+
+[ignore]
+.*/build/.*
+.*/node_modules/babel-plugin-flow-runtime/*
+.*/node_modules/flow-runtime-validators/src/__tests__/*
