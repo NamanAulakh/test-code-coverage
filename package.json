@@ -4,13 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "nyc": {
-    "include": ["build/**/*.js"],
+    "include": ["src/**/*.js"],
     "extension": [".js"],
     "sourceMap": false,
-    "instrument": false
+    "instrument": true
   },
   "scripts": {
-    "build": "babel src --out-dir build && cp -vr src/config build",
+    "build": "NODE_ENV=test babel src --out-dir build && cp -vr src/config build",
     "test": "NODE_ENV=test nyc mocha test"
   },
   "devDependencies": {
